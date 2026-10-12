@@ -1,0 +1,84 @@
+{
+  "experiment": "V3",
+  "seed": 42,
+  "best_epoch": 1,
+  "best_validation_macro_f1": 0.7503359558899942,
+  "test_loss": 0.4288346129782388,
+  "test_accuracy": 0.8279628618241398,
+  "test_macro_f1": 0.8543028540890215,
+  "evaluation_unit": "window-level; not patient-level",
+  "class_names": [
+    "Normal",
+    "COVID",
+    "CAP",
+    "Lung Cancer"
+  ],
+  "classification_report": {
+    "Normal": {
+      "precision": 0.8160621761658031,
+      "recall": 1.0,
+      "f1-score": 0.8987161198288159,
+      "support": 630.0
+    },
+    "COVID": {
+      "precision": 0.9637155297532656,
+      "recall": 0.6960167714884696,
+      "f1-score": 0.808277541083384,
+      "support": 954.0
+    },
+    "CAP": {
+      "precision": 0.5888888888888889,
+      "recall": 0.8945147679324894,
+      "f1-score": 0.7102177554438861,
+      "support": 237.0
+    },
+    "Lung Cancer": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 10.0
+    },
+    "accuracy": 0.8279628618241398,
+    "macro avg": {
+      "precision": 0.8421666487019894,
+      "recall": 0.8976328848552397,
+      "f1-score": 0.8543028540890215,
+      "support": 1831.0
+    },
+    "weighted avg": {
+      "precision": 0.8645933659397804,
+      "recall": 0.8279628618241398,
+      "f1-score": 0.8277496109917549,
+      "support": 1831.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      630,
+      0,
+      0,
+      0
+    ],
+    [
+      142,
+      664,
+      148,
+      0
+    ],
+    [
+      0,
+      25,
+      212,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      10
+    ]
+  ],
+  "train_samples": 8681,
+  "validation_samples": 1693,
+  "test_samples": 1831
+}
