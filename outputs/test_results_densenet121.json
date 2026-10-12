@@ -1,0 +1,84 @@
+{
+  "architecture": "DenseNet121Transformer",
+  "seed": 42,
+  "best_epoch": 4,
+  "best_validation_macro_f1": 0.8514999937958878,
+  "test_loss": 0.3474236373031224,
+  "test_accuracy": 0.8793009284543966,
+  "test_macro_f1": 0.8971709797973002,
+  "evaluation_unit": "window-level",
+  "class_names": [
+    "Normal",
+    "COVID",
+    "CAP",
+    "Lung Cancer"
+  ],
+  "classification_report": {
+    "Normal": {
+      "precision": 0.8383561643835616,
+      "recall": 0.9714285714285714,
+      "f1-score": 0.9,
+      "support": 630.0
+    },
+    "COVID": {
+      "precision": 0.9150622876557192,
+      "recall": 0.8469601677148847,
+      "f1-score": 0.8796951551442569,
+      "support": 954.0
+    },
+    "CAP": {
+      "precision": 0.8653846153846154,
+      "recall": 0.759493670886076,
+      "f1-score": 0.8089887640449438,
+      "support": 237.0
+    },
+    "Lung Cancer": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 10.0
+    },
+    "accuracy": 0.8793009284543966,
+    "macro avg": {
+      "precision": 0.9047007668559741,
+      "recall": 0.894470602507383,
+      "f1-score": 0.8971709797973002,
+      "support": 1831.0
+    },
+    "weighted avg": {
+      "precision": 0.8827034188046717,
+      "recall": 0.8793009284543966,
+      "f1-score": 0.878186518343131,
+      "support": 1831.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      612,
+      18,
+      0,
+      0
+    ],
+    [
+      118,
+      808,
+      28,
+      0
+    ],
+    [
+      0,
+      57,
+      180,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      10
+    ]
+  ],
+  "train_samples": 8681,
+  "validation_samples": 1693,
+  "test_samples": 1831
+}
